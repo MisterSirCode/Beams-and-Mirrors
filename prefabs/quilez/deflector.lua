@@ -6,5 +6,5 @@ function tick()
     if GetTagValue(shape, "state") ~= 1 then
         SetShapeEmissiveScale(shape, 0)
     end
-    SetTagValue(shape, "state", 0)
+    SetTag(shape, "state", 0)
 end
