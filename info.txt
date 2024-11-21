@@ -1,0 +1,4 @@
+name = Beams and Mirrors
+author = MisterSirCode
+description = [noupload] Version 1.0 - Spawnable lasers, mirrors, deflectors, and more!
+tags = tool, global
