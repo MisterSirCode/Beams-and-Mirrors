@@ -3,8 +3,11 @@ function init()
 end
 
 function tick()
-    if GetTagValue(shape, "state") ~= 1 then
+    local state = GetTagValue(shape, "state")
+    if state == "true" then
+        SetShapeEmissiveScale(shape, 1)
+    else
         SetShapeEmissiveScale(shape, 0)
     end
-    SetTag(shape, "state", 0)
+    SetTag(shape, "state", false)
 end
