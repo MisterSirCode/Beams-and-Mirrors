@@ -1,0 +1,19 @@
+<scene version="1.6.0" shadowVolume="204.8 100 204.8">
+	<group name="Base" pos="0.0 0.0 0.0" prop0="tags=nocull">
+		<voxbox name="Plate" tags="nocull ground unbreakable" pos="-102.4 0.0 -102.4" rot="0.0 0.0 0.0" collide="true" prop="false" size="2048 2 2048" color="1 1 1">
+			<voxbox name="Plate" tags="nocull ground unbreakable" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" collide="true" prop="false" size="2048 2 2048" color="1 1 1"/>
+		</voxbox>
+		<group name="Items" pos="5.7 0.2 0.0">
+			<instance pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/prefabs/quilez/deflector.xml"/>
+			<instance pos="0.0 0.0 3.7" file="MOD/prefabs/quilez/mirror.xml"/>
+		</group>
+	</group>
+	<group name="World Stuff">
+		<spawnpoint name="Player Spawnpoint" pos="0.0 2.9 0.0" rot="0 110 0"/>
+		<environment name="Environment" template="sunny" skyboxrot="35" constant="0 0 0" ambientexponent="2.0" nightlight="true"/>
+		<script name="World Script" file="MOD/script/world.lua"/>
+		<script name="enable tools" file="main.lua" param0="basetools=true"/>
+		<script name="enable sandbox" file="sandbox.lua" param0="basetools=true"/>
+	</group>
+</scene>
+
